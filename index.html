@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo">MySite</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to My Website</h1>
+        <p>A simple, clean starting point built with plain HTML, CSS, and JavaScript.</p>
+        <a href="#contact" class="button">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About</h2>
+      <p>This is a basic website you can customize however you like. Edit
+        <code>index.html</code> to change the content and <code>styles.css</code> to change the look.</p>
+    </section>
+
+    <section id="features" class="container section">
+      <h2>Features</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Responsive</h3>
+          <p>Looks good on phones, tablets, and desktops.</p>
+        </article>
+        <article class="card">
+          <h3>Lightweight</h3>
+          <p>No frameworks or build step — just open the file.</p>
+        </article>
+        <article class="card">
+          <h3>Easy to edit</h3>
+          <p>Clear structure that's simple to extend.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <form id="contact-form" class="contact-form">
+        <label>Name <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Message <textarea name="message" rows="4" required></textarea></label>
+        <button type="submit" class="button">Send</button>
+        <p id="form-status" class="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> MySite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
